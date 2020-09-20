@@ -1,0 +1,4971 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Sting variables"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "7"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Sring data types are in single or double quotes\n",
+    "# To access the strings, we use square brackets and indes numbers\n",
+    "name='solomon'\n",
+    "len(name) # Length of string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'l'"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name[2] # accessing mebers of a string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'SOLOMON'"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.upper() # To display strings in upper case"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'solomon'"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.lower() # To display the string in lower case"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'l'"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name[2:3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'lo'"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name[2:4]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "''"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name[-2:1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'o'"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name[-2] # letters from the end"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'o'"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name[5]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#  List data types"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Order can be changed, duplicate entities are present\n",
+    "mylist = [10,50,10,0,6,5,'solo','good']\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[10, 50, 10, 0, 6, 5, 'solo', 'good']"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[50, 10, 0]"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist[1:4]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mylist[3]='tensor flow'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "12"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(mylist)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mylist.append(90) # To add a component at the end of a string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[10, 50, 10, 'tensor flow', 6, 5, 'solo', 'good', 7, 8, 90]"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mylist.insert(5, 'kimunyu') # To insert an element in a string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[10, 50, 10, 'tensor flow', 6, 'kimunyu', 5, 'solo', 'good', 7, 8, 90]"
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "12"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(mylist)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<function list.reverse>"
+      ]
+     },
+     "execution_count": 34,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist.reverse"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[10, 50, 10, 'tensor flow', 6, 'kimunyu', 5, 'solo', 'good', 7, 8, 90]"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "12"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(mylist)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mylist.reverse() # To reverse a list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[90, 8, 7, 'good', 'solo', 5, 'kimunyu', 6, 'tensor flow', 10, 50, 10]"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mylist"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "12"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(mylist)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Dictionary"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Unorderes, can be changed, no duplicate entities are present\n",
+    "courses = {1, 'python',  'machine learning', 'hadoop', 'apache'}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 'apache', 'hadoop', 'machine learning', 'python'}"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "courses"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'set' object is not subscriptable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-69-df8fc9097da8>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mcourses\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m'four'\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;31m# To get the third element in the dictionary\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m: 'set' object is not subscriptable"
+     ]
+    }
+   ],
+   "source": [
+    "courses['four'] # To get the third element in the dictionary"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "AttributeError",
+     "evalue": "'set' object has no attribute 'get'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-71-3a09076645f8>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mcourses\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mget\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'four'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mAttributeError\u001b[0m: 'set' object has no attribute 'get'"
+     ]
+    }
+   ],
+   "source": [
+    "courses.get('four')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'set' object is not subscriptable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-58-5d30d6c8a544>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mcourses\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m'four'\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m: 'set' object is not subscriptable"
+     ]
+    }
+   ],
+   "source": [
+    "courses['four']"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Tuple\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Ordered, cannot be changed. Duplicate entitiesare present\n",
+    "# Since it cannot be changed, there are few operations tha you can do\n",
+    "animals = (4, 84, 9, 48, 'tiger', 'lion', 'lion')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(4, 84, 9, 48, 'tiger', 'lion', 'lion')"
+      ]
+     },
+     "execution_count": 74,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "animals"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 76,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "animals.count('lion')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Sets"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'lion', 'elephant', 'leopard'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Unordered,no duplicate entities are present\n",
+    "animals = {\"lion\", \"elephant\", \"leopard\"}\n",
+    "print (animals)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{10, 'data mining', 15}\n"
+     ]
+    }
+   ],
+   "source": [
+    "myset = {10, 15, 15, 15, 'data mining'}\n",
+    "print(myset)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 82,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'set' object is not subscriptable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-82-87d4898c78d0>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mmyset\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m: 'set' object is not subscriptable"
+     ]
+    }
+   ],
+   "source": [
+    "myset[2] # Sets do not support indexing"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 83,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "range(0, 10)"
+      ]
+     },
+     "execution_count": 83,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "range(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]"
+      ]
+     },
+     "execution_count": 84,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(range(20))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[[3, 45, 45, 87], {59, 78, 89}]"
+      ]
+     },
+     "execution_count": 87,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = [3, 45, 45,87]\n",
+    "b = {78, 59, 89}\n",
+    "c = [a, b]\n",
+    "c"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Type conversion"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x =10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name = 'name'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 90,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "unsupported operand type(s) for +: 'int' and 'str'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-90-a57b73ea3f73>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mx\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mname\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m: unsupported operand type(s) for +: 'int' and 'str'"
+     ]
+    }
+   ],
+   "source": [
+    "x + name"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Type conversion specifies a type to a variable\n",
+    "# int () changes any data type to an integer data type\n",
+    "# float() changes any data type into a float data type\n",
+    "# list() chanhes any data type into a list\n",
+    "# dict() changes any data type into a dictionary\n",
+    "# set() changes any data type into a set\n",
+    "# tuple() changes any data type into a tuple\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 92,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'10'"
+      ]
+     },
+     "execution_count": 92,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 93,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'10name'"
+      ]
+     },
+     "execution_count": 93,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str(x) + name"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 94,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[89, 59, 78]"
+      ]
+     },
+     "execution_count": 94,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Python collections"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 95,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Collections are container data types: list (square brackets), tuple, sets {}, dictonary(key values, {})\n",
+    "# Collection modules \n",
+    "# Specialised collections data types: namedtuple(), chainmap, deque, counter, OrderedDict, defaultdict, UserDict, UserList,userstring"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# # namedtuple()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 100,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "courses(name='data science', technology='python')\n"
+     ]
+    }
+   ],
+   "source": [
+    "# namedtuple() returns a tuple with a named value for each element in the tuple\n",
+    "from collections import namedtuple\n",
+    "a = namedtuple('courses', 'name, technology')\n",
+    "s = a('data science', 'python')\n",
+    "print(s)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 102,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "courses(name='artificial intelligence', technology='python')\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Implementing a named tuple using a list\n",
+    "a = namedtuple('courses', 'name, technology')\n",
+    "s = a._make(['artificial intelligence', 'python'])\n",
+    "print(s)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# # Deque"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 112,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "deque(['B', 'a', 'p', 't', 'i', 's', 'm'])\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Deque is an optimized list to perform insertion and deletion easily\n",
+    "from collections import deque\n",
+    "a = ['B', 'a', 'p', 't', 'i', 's', 'm']\n",
+    "d = deque(a)\n",
+    "print(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 113,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "deque(['B', 'a', 'p', 't', 'i', 's', 'm', 'python'])"
+      ]
+     },
+     "execution_count": 113,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d.append('python') # Adding an element in a deque\n",
+    "d"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 121,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "deque(['sas',\n",
+       "       'sas',\n",
+       "       'sas',\n",
+       "       'sas',\n",
+       "       'B',\n",
+       "       'a',\n",
+       "       'p',\n",
+       "       't',\n",
+       "       'i',\n",
+       "       's',\n",
+       "       'm',\n",
+       "       'python'])"
+      ]
+     },
+     "execution_count": 121,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d.appendleft('sas')\n",
+    "d\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 120,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "deque(['sas', 'sas', 'sas', 'B', 'a', 'p', 't', 'i', 's', 'm', 'python'])"
+      ]
+     },
+     "execution_count": 120,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d.popleft() # For removing items on the left of a deque\n",
+    "d "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 122,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "deque(['sas', 'sas', 'sas', 'sas', 'B', 'a', 'p', 't', 'i', 's', 'm'])"
+      ]
+     },
+     "execution_count": 122,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d.pop() # Removing items on the left\n",
+    "d"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# ChainMap"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 128,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "ChainMap({1: 'Data Ingestion', 2: 'Data mining'}, {3: 'Blockchain', 4: 'RPA'})"
+      ]
+     },
+     "execution_count": 128,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Chainmap is a dictionary like class for creating a single view of multiple mapping\n",
+    "from collections import ChainMap\n",
+    "solo = {1: 'Data Ingestion', 2: 'Data mining'}\n",
+    "kim = {3: 'Blockchain', 4: 'RPA'}\n",
+    "solokim = ChainMap(solo,kim) # Creating a chainmap of two dictionaries\n",
+    "solokim"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Counter "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 129,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Counter({8: 6, 7: 6, 4: 2, 1: 1, 9: 1, 2: 1, 5: 1})\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Counter is a dictionary subclass for counting hashable objects (Iterable values)\n",
+    "from collections import Counter\n",
+    "a = [1,8,9,8,7,8,7,7,7,7,4,8,8,4,8,7,2,5,]\n",
+    "b = Counter(a)\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 130,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 8, 8, 8, 8, 8, 8, 9, 7, 7, 7, 7, 7, 7, 4, 4, 2, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Element functiom\n",
+    "print(list(b.elements()))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 133,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[(8, 6), (7, 6), (4, 2), (1, 1), (9, 1), (2, 1), (5, 1)]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(b.most_common())\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 134,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "sub = {2:1 , 6:1}\n",
+    "print(b.subtract(sub))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 137,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[(8, 6), (7, 6), (4, 2), (1, 1), (9, 1), (5, 1), (2, 0), (6, -1)]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(b.most_common())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# OrderedDict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 140,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "OrderedDict([(1, 'D'), (2, 'a'), (3, 't'), (4, 'a')])\n"
+     ]
+    }
+   ],
+   "source": [
+    "# OrderedDict is a dictionary subclass which remembers the order in which the entities were done\n",
+    "from collections import OrderedDict\n",
+    "d = OrderedDict()\n",
+    "d[1] = 'D'\n",
+    "d[2] = 'a'\n",
+    "d[3] = 't'\n",
+    "d[4] = 'a'\n",
+    "print(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 142,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "odict_keys([1, 2, 3, 4])\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(d.keys())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 143,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "odict_items([(1, 'D'), (2, 'a'), (3, 't'), (4, 'a')])\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(d.items())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Default Dictionary"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# defaultdict is adictionary subclass which calls a factory function to supply missing values\n",
+    "from collections import defaultdict\n",
+    "d =defaultdict(int)\n",
+    "d[1]= 'python'\n",
+    "d[2] = 'edureka'\n",
+    "print(d[3]) # it brings an output of d[3] which is not in the dictionary\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "KeyError",
+     "evalue": "3",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-2-5536e70dafe6>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m# For a normal dictionary\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0ma\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m{\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0;34m'python'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0;34m'edureka'\u001b[0m\u001b[0;34m}\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ma\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mKeyError\u001b[0m: 3"
+     ]
+    }
+   ],
+   "source": [
+    "# For a normal dictionary\n",
+    "a = {1: 'python', 2: 'edureka'}\n",
+    "print(a[3]) # Key erro because 3 is not in the key dictionary"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# UserDict, UserList, UserString"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# UserDict is wrapper around the dictionary objects for easier dicitonary sub-class\n",
+    "# UserList is a wrapper around the list objects for easier list subclassing\n",
+    "# UserString is a wrapper around string objects for easier string subclassing\n",
+    " "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Arrays"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# An array is a data structure which can hold more than one value at a time. It is a collection or ordered series of elements of the same type\n",
+    "# Each element has a unique index value ie a[0], a[1]\n",
+    "# Array can only store a single data type elements but lists can have any type of data\n",
+    "# You need to import array model\n",
+    "# You can import arrays by: import array, import array as arr, from array import *\n",
+    "import array"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array('i', [1, 2, 3, 4, 5, 6])"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=array.array('i',[1,2,3,4,5,6]) # array is the name of the module, array constuctor, i is the typecode\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import array as arr"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array('i', [1, 9, 87, 4, 5])"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=arr.array('i',[1,9,87,4,5])\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from array import *"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array('q', [1, 12, 1519, 5])"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=array('q',[1,12,1519,5])\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Accessing elements"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1519"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a[2]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Basic array operations"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# ### Finding length of arrays"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    " len(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Adding elements to an array"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array('d', [1.1, 2.3, 3.9])"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# append() is used when you want to add a single element at the end of an array\n",
+    "# extend() is used when you want to add more than one element at the end of an array\n",
+    "# Insert is used when you want to add an elements at a specific position in an array\n",
+    "import array as arr\n",
+    "b=arr.array('d', [1.1,2.3,3.9])\n",
+    "b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Array b= array('d', [1.1, 2.3, 3.9, 2.9, 2.9])\n"
+     ]
+    }
+   ],
+   "source": [
+    "b.append(2.9)\n",
+    "print(\"Array b=\",b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Array a= array('d', [2.1, 23.9, 78.9, 87.0, 9.8, 98.9, 48.2])\n"
+     ]
+    }
+   ],
+   "source": [
+    "a=arr.array('d', [2.1,23.9,78.9,87.0])\n",
+    "a.extend([9.8,98.9,48.2])\n",
+    "print(\"Array a=\",a)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Arrays c= array('q', [1, 8, 3, 9, 7, 4, 5, 6, 4])\n"
+     ]
+    }
+   ],
+   "source": [
+    "c=arr.array('q', [1,8,9,7,4,5,6,4])\n",
+    "c\n",
+    "c.insert(2,3)\n",
+    "print(\"Arrays c=\",c)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Removing elements of an array"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Popping last element 0.98\n",
+      "Popping second element 2.2\n",
+      "array('d', [6.8, 9.8, 3.6])\n"
+     ]
+    }
+   ],
+   "source": [
+    "# pop() is used when you want to remove an element and return it.\n",
+    "# remove() is used when you want to remove an element with a specific value returning it.\n",
+    "import array as arr\n",
+    "a=arr.array('d',[1.1, 2.2, 6.8, 9.8, 3.6, 0.98])\n",
+    "print(\"Popping last element\",a.pop())\n",
+    "print(\"Popping second element\",a.pop(1))\n",
+    "a.remove(1.1)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array('d', [6.8, 9.8, 3.6])"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3.6"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a.pop()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array('d')"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Array concatenation"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Array c= array('d', [9.8, 7.8, 4.6, 1.3, 4.5, 4.8, 4.9, 3.6, 4.8, 7.9])\n"
+     ]
+    }
+   ],
+   "source": [
+    "# array concatenation can be done using + symbol\n",
+    "# you concatenate arrays of the same type\n",
+    "import array as arr\n",
+    "a=arr.array('d', [9.8,7.8,4.6,1.3,4.5,4.8,4.9])\n",
+    "b=arr.array('d', [3.6,4.8,7.9])\n",
+    "c=arr.array\n",
+    "c=a+b\n",
+    "print(\"Array c=\", c)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Slicing an array"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "array('d', [5.9, 7.9, 4.6, 1.3])\n"
+     ]
+    }
+   ],
+   "source": [
+    "# An array can be sliced using the : symbol. This returns a range of elements that we gave specifies by the index numbers\n",
+    "import array as arr\n",
+    "a=arr.array('d', [5.9,7.9,4.6,1.3,4.6,8.9,7.6,4.8])\n",
+    "print(a[0:4])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array('d')"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a[-1:1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array('d', [4.8, 7.6, 8.9, 4.6, 1.3, 4.6, 7.9, 5.9])"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a[::-1] # to print a reverse copy of an array "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Looping through an array"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "All values\n",
+      "2.1\n",
+      "6.6\n",
+      "4.7\n",
+      "8.9\n",
+      "4.5\n",
+      "4.6\n",
+      "1.3\n",
+      "4.5\n",
+      "4.9\n",
+      "7.5\n",
+      "1.3\n",
+      "2.3\n",
+      "2.6\n",
+      "2.5\n"
+     ]
+    }
+   ],
+   "source": [
+    "# For loop iterates over the items of an array specified number of times\n",
+    "# While loop iterates over the elements until a certsin condition is met\n",
+    "import array as arr\n",
+    "a=arr.array('d', [2.1,6.6,4.7,8.9,4.5,4.6,1.3,4.5,4.9,7.5,1.3,2.3,2.6,2.5])\n",
+    "print(\"All values\")\n",
+    "for x in a:\n",
+    "    print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2.1\n",
+      "6.6\n",
+      "4.7\n",
+      "8.9\n",
+      "4.5\n",
+      "4.6\n",
+      "1.3\n",
+      "4.5\n",
+      "4.9\n",
+      "7.5\n"
+     ]
+    }
+   ],
+   "source": [
+    " for x in a[0:-4]:\n",
+    "        print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2.1\n",
+      "6.6\n",
+      "4.7\n",
+      "8.9\n",
+      "4.5\n",
+      "4.6\n",
+      "1.3\n",
+      "4.5\n",
+      "4.9\n",
+      "7.5\n",
+      "1.3\n",
+      "2.3\n",
+      "2.6\n",
+      "2.5\n"
+     ]
+    }
+   ],
+   "source": [
+    "b=0 # You can use any name of your choice\n",
+    "while b<len(a):\n",
+    "    print(a[b])\n",
+    "    b=b+1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "while b<a[1]:\n",
+    "    print(a[b])\n",
+    "    a=a+1 a+=1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array('d', [2.1, 6.6, 4.7, 8.9, 4.5, 4.6, 1.3, 4.5, 4.9, 7.5, 1.3, 2.3, 2.6, 2.5])"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Hash Table and Hash map"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'Dave': '001', 'Ava': '002', 'Joe': '003'}\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Hash table or a Hashmap is a type of data that maps keys to its value index\n",
+    "# We use {} or carley bracket or dict() function to create a dictionary\n",
+    "my_dict={'Dave':'001','Ava':'002','Joe':'003'}\n",
+    "print(my_dict)\n",
+    "type(my_dict)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{}\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "new_dict=dict()\n",
+    "print(new_dict)\n",
+    "type(new_dict)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'Dave': '0001', 'Ava': '002'}\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "new_dict=dict(Dave='0001',Ava='002') # To hash a dictionary\n",
+    "print(new_dict)\n",
+    "type(new_dict)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Nested Dictionary "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'Employee': {'Dave': {'ID': '001', 'salary': '2000', 'Designation': 'Teamland'}, 'Ava': {'ID': '002', 'Salary': '1000', 'Designation': 'Associate'}}}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Nested dictionary are basically dicionaries that lie within other dictionaries\n",
+    "emp_details={'Employee':{'Dave':{'ID':'001','salary':'2000','Designation':'Teamland'},'Ava':{'ID':'002','Salary':'1000','Designation':'Associate'}}}\n",
+    "print(emp_details)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Performing Operations on Hash Tables"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Accessing items"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'001'"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dict['Dave'] # Accessing using key values"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'Dave': '001', 'Ava': '002', 'Joe': '003'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(my_dict)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "dict_keys(['Dave', 'Ava', 'Joe'])\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(my_dict.keys()) # All the keys in the dictionary have been returned"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "dict_values(['001', '002', '003'])\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(my_dict.values()) # All the values in a dictionary have been return"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "002\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(my_dict.get('Ava')) # You have to specify the parameter (value you want to access)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Dave\n",
+      "Ava\n",
+      "Joe\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Using for loop\n",
+    "for x in my_dict: # Retrieving all the keys in the dicionary\n",
+    "    print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "001\n",
+      "002\n",
+      "003\n"
+     ]
+    }
+   ],
+   "source": [
+    "for x in my_dict.values(): # Returning all values in a dictionary\n",
+    "    print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "001\n",
+      "002\n",
+      "003\n"
+     ]
+    }
+   ],
+   "source": [
+    "for x in my_dict.values():\n",
+    "    print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Dave 001\n",
+      "Ava 002\n",
+      "Joe 003\n"
+     ]
+    }
+   ],
+   "source": [
+    "for x,y in my_dict.items(): # For retrieving all the key values in a dictianary\n",
+    "    print(x,y)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Updating values on Hash Tables\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'Dave': '004', 'Ava': '002', 'Joe': '003', 'Chris': '001'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Dictionaries are mutable data types and you can update them as when required\n",
+    "my_dict['Dave']='004'\n",
+    "my_dict['Chris']='001'\n",
+    "print(my_dict)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Deleting "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'002'"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dict.pop('Ava') # Using the pop function. It will remove the key value and returning the value"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "('Chris', '001')"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dict.popitem() # Wiil remove the last inserted item in the dictionary and returning if"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "del my_dict['Dave'] #\n",
+    "print(my_dict)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Converting Dictionary into a dataframe "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "                 Dave        Ava\n",
+      "ID                001        002\n",
+      "salary           2000        NaN\n",
+      "Designation  Teamland  Associate\n",
+      "Salary            NaN       1000\n"
+     ]
+    }
+   ],
+   "source": [
+    "# A dataframe is a 2-D (2-Dimensional) data structure that consists of columns of various types. It is very similar to a python dictionary and you can convert a dictionary into a pandas dataframe\n",
+    "import pandas as pd\n",
+    "df = pd.DataFrame(emp_details['Employee'])\n",
+    "print(df)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Data Visualization"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import seaborn as sns\n",
+    "import matplotlib as plt\n",
+    "import os\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "FileNotFoundError",
+     "evalue": "[Errno 2] File b'/media/root/9A04E9A504E9851B1/data/housing.csv' does not exist: b'/media/root/9A04E9A504E9851B1/data/housing.csv'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mFileNotFoundError\u001b[0m                         Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-6-d2bb9fab37dc>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mdata\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mpd\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mread_csv\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mr'/media/root/9A04E9A504E9851B1/data/housing.csv'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mdata\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mhead\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m~/anaconda3/lib/python3.7/site-packages/pandas/io/parsers.py\u001b[0m in \u001b[0;36mparser_f\u001b[0;34m(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, dialect, error_bad_lines, warn_bad_lines, delim_whitespace, low_memory, memory_map, float_precision)\u001b[0m\n\u001b[1;32m    683\u001b[0m         )\n\u001b[1;32m    684\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 685\u001b[0;31m         \u001b[0;32mreturn\u001b[0m \u001b[0m_read\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfilepath_or_buffer\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mkwds\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    686\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    687\u001b[0m     \u001b[0mparser_f\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m__name__\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mname\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m~/anaconda3/lib/python3.7/site-packages/pandas/io/parsers.py\u001b[0m in \u001b[0;36m_read\u001b[0;34m(filepath_or_buffer, kwds)\u001b[0m\n\u001b[1;32m    455\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    456\u001b[0m     \u001b[0;31m# Create the parser.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 457\u001b[0;31m     \u001b[0mparser\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mTextFileReader\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfp_or_buf\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwds\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    458\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    459\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mchunksize\u001b[0m \u001b[0;32mor\u001b[0m \u001b[0miterator\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m~/anaconda3/lib/python3.7/site-packages/pandas/io/parsers.py\u001b[0m in \u001b[0;36m__init__\u001b[0;34m(self, f, engine, **kwds)\u001b[0m\n\u001b[1;32m    893\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0moptions\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"has_index_names\"\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mkwds\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"has_index_names\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    894\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 895\u001b[0;31m         \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_make_engine\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mengine\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    896\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    897\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mclose\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m~/anaconda3/lib/python3.7/site-packages/pandas/io/parsers.py\u001b[0m in \u001b[0;36m_make_engine\u001b[0;34m(self, engine)\u001b[0m\n\u001b[1;32m   1133\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0m_make_engine\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mengine\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"c\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1134\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mengine\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m\"c\"\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1135\u001b[0;31m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_engine\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mCParserWrapper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mf\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0moptions\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1136\u001b[0m         \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1137\u001b[0m             \u001b[0;32mif\u001b[0m \u001b[0mengine\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m\"python\"\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m~/anaconda3/lib/python3.7/site-packages/pandas/io/parsers.py\u001b[0m in \u001b[0;36m__init__\u001b[0;34m(self, src, **kwds)\u001b[0m\n\u001b[1;32m   1915\u001b[0m         \u001b[0mkwds\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"usecols\"\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0musecols\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1916\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1917\u001b[0;31m         \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_reader\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mparsers\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mTextReader\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msrc\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwds\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1918\u001b[0m         \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0munnamed_cols\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_reader\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0munnamed_cols\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1919\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32mpandas/_libs/parsers.pyx\u001b[0m in \u001b[0;36mpandas._libs.parsers.TextReader.__cinit__\u001b[0;34m()\u001b[0m\n",
+      "\u001b[0;32mpandas/_libs/parsers.pyx\u001b[0m in \u001b[0;36mpandas._libs.parsers.TextReader._setup_parser_source\u001b[0;34m()\u001b[0m\n",
+      "\u001b[0;31mFileNotFoundError\u001b[0m: [Errno 2] File b'/media/root/9A04E9A504E9851B1/data/housing.csv' does not exist: b'/media/root/9A04E9A504E9851B1/data/housing.csv'"
+     ]
+    }
+   ],
+   "source": [
+    "data=pd.read_csv(r'/media/root/9A04E9A504E9851B1/data/housing.csv')\n",
+    "sns.heatmap(data.corr())\n",
+    "sns.scatterplot(x='housing_median_age',y='total_bedrooms',data=data)\n",
+    "sns.boxplot(x='housing_median_age',y='total_bedrooms',data=data)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "                 Dave        Ava\n",
+      "ID                001        002\n",
+      "salary           2000        NaN\n",
+      "Designation  Teamland  Associate\n",
+      "Salary            NaN       1000\n"
+     ]
+    }
+   ],
+   "source": [
+    "import pandas as pd\n",
+    "df = pd.DataFrame(emp_details['Employee'])\n",
+    "print(df)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'Employee': {'Dave': {'ID': '001', 'salary': '2000', 'Designation': 'Teamland'}, 'Ava': {'ID': '002', 'Salary': '1000', 'Designation': 'Associate'}}}\n",
+      "                 Dave        Ava\n",
+      "ID                001        002\n",
+      "salary           2000        NaN\n",
+      "Designation  Teamland  Associate\n",
+      "Salary            NaN       1000\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Nested dictionary are basically dicionaries that lie within other dictionaries\n",
+    "emp_details={'Employee':{'Dave':{'ID':'001','salary':'2000','Designation':'Teamland'},'Ava':{'ID':'002','Salary':'1000','Designation':'Associate'}}}\n",
+    "print(emp_details)\n",
+    "import pandas as pd\n",
+    "df = pd.DataFrame(emp_details['Employee'])\n",
+    "print(df)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "OPERATORS IN PYTHON"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "ARITHIMETIC OPERATORS"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "25"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Addition +\n",
+    "# Subtration -\n",
+    "# Multiplication *\n",
+    "# Division/ modulus /\n",
+    "# Exponentiation **\n",
+    "# Flow division\n",
+    "x=10\n",
+    "y=15\n",
+    "x+y\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "-5"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x-y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "150"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x*y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.6666666666666666"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x/y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1000000000000000"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x ** y # E"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x // y # Flow division"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "10"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x % y # It gives remainder"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "ASSIGNMENT OPERATORS"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "10"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Assignment operators are used to assign values\n",
+    "x=10\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "20"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x +=10 # This also means x = x+10\n",
+    "x\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "10"
+      ]
+     },
+     "execution_count": 48,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x -=10\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1000"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x *=10\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x %=10\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x **=10\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x //=10\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "10"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x |=10\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x ^=10\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x &=10\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "35"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "y=y+10\n",
+    "y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 52,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = 5\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "10"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a +=5 # a=a+5\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "71821208748307350806616247734800247443646340206560432071396707807743664171107442303767251899701806274179648528361693395908493607789072590515205376005217038518864343357974324172025963219925969594574290850486833464941042717610929437440253086127413158881119110878565254870714807127305501250316534243564700489124592870454956410729577301690317708800960633255792684347901301624401393481617554653310899100138176009977541980333626270294189453125"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a **=5 # a=a^5 ie 10^5\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Comparison operators"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Comparison operators are used to compare two values\n",
+    "# equal x == y\n",
+    "# not equal x != y\n",
+    "# greater than x > y\n",
+    "# Less than x < y\n",
+    "# Greater than or equal to x >= y\n",
+    "# Less than or equal to x <=y\n",
+    "# Are either true or false\n",
+    "val = 10\n",
+    "num = 20"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "compare = val==num\n",
+    "compare"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "solo = val <= num\n",
+    "solo"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "kim=val!=num\n",
+    "kim"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Logical Operators"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Logical Operators are used combine conditional statements\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Condition statement"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "if num==val:\n",
+    "    print('equal')\n",
+    "elif val > num:\n",
+    "    print('greater')\n",
+    "else:\n",
+    "    print('smaller')\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Greater\n"
+     ]
+    }
+   ],
+   "source": [
+    "if num==val:\n",
+    "    print(\"equal\")\n",
+    "elif num>val:\n",
+    "    print(\"Greater\")\n",
+    "else:\n",
+    "    print(\"Smaller\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x=10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x>10 and x>5 #Because one of the operators are true"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x>10 or x>5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "not(x>10 and x>5)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Identity operators"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Identity operators are used to compare two objects\n",
+    "# Is returns true if both variables are the same objects eg. x is y\n",
+    "# Is not returns true if both variables are not the same object eg. xis not y\n",
+    "list1 = [10,20,30]\n",
+    "list2 = [10,20,30]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x =list1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x is list1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list1 is list2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list1 is not list2"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Mebership Operators "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Membership Operators are used to check if a sequence is present in an object\n",
+    "# IN returns true if a sequence with the specified value is present in the object eg. a in y\n",
+    "# NOT IN returns true if a sequence with the specified value is not present in the object eg. x not in y\n",
+    "x in list1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list1 in list2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "10 in list1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(10, 20, True)"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "10,20,30 in list1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'banana' in list1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list1 ==list2"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Bitwise operators"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "8"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Bitwise and operator &\n",
+    "10 & 12 # 10 in binary is 1000 and 12 is 1010, therefore using the logical and we get 1000"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "14"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "10 | 12 # Logical or"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "10 >>2 # Righ shift"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "8"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "10 << 2 # Left shift ie 1010 then shift 2 digit on right ie 101000 = 40\n",
+    "# Bitwise XOR ^ sets each bit to 1 if one of the bit is 1\n",
+    "# Bitwise NOT ~ Inverts all bits\n",
+    "10 ^ 2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-37-1a5749a0f3e0>, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-37-1a5749a0f3e0>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    10 ~ 10\u001b[0m\n\u001b[0m       ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "10 ~ 10"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Loops"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# If a softwaredeveloper develops a payroll to compute salaries: You can do manual or use loops\n",
+    "# There are finite and infinite loops\n",
+    "# Pre-test and post-test loops"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### While loops "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Number\n",
+      "Number\n",
+      "Number\n",
+      "Number\n",
+      "Number\n",
+      "Number\n",
+      "Number\n",
+      "Number\n",
+      "Number\n",
+      "Be baptized into Christ\n"
+     ]
+    }
+   ],
+   "source": [
+    "# While loops are known as indefinite or conditional loops. \n",
+    "# They will keep iterating until certain conditions are met.\n",
+    "# This is no guarantee ahead of time regarding how many times the loop will iterate\n",
+    "count = 0\n",
+    "while count<9:\n",
+    "    print(\"Number\".format(count))\n",
+    "    count = count + 1\n",
+    "print(\"Be baptized into Christ\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "New number:88\n",
+      "Number too large\n",
+      "New number:8\n",
+      "Number too small\n",
+      "New number:20\n",
+      "Number too large\n",
+      "New number:14\n",
+      "Number too large\n",
+      "New number:10\n",
+      "Congratulations. You made it!\n"
+     ]
+    }
+   ],
+   "source": [
+    "# A little guessing game for numbers\n",
+    "import random\n",
+    "n = 20\n",
+    "to_be_guessed = int(n * random.random()) + 1\n",
+    "guess = 0\n",
+    "while guess != to_be_guessed:\n",
+    "    guess =int(input(\"New number:\"))\n",
+    "    if guess > 0:\n",
+    "        if guess > to_be_guessed:\n",
+    "            print(\"Number too large\")\n",
+    "        elif guess < to_be_guessed:\n",
+    "            print(\"Number too small\")\n",
+    "    else:\n",
+    "        print(\"Sorry that you're giving up!\")\n",
+    "        break\n",
+    "else:\n",
+    "    print(\"Congratulations. You made it!\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## For loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Current fruits: mango\n",
+      "Current fruits: grapes\n",
+      "Current fruits: apple\n",
+      "Good bye\n"
+     ]
+    }
+   ],
+   "source": [
+    "# For loop is a python loop which repeats a group of specified number of times. \n",
+    "# The loop provides a syntax where the following information is provided:\n",
+    "  # Boolean condition\n",
+    "  # The initial value of the counting variable\n",
+    "  # Incrementation of the counting variable\n",
+    "fruits = ['mango', 'grapes', 'apple']\n",
+    "for fruit in fruits:\n",
+    "    print(\"Current fruits:\", fruit)\n",
+    "print(\"Good bye\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Number:5\n",
+      "1\n",
+      "2\n",
+      "6\n",
+      "24\n",
+      "120\n"
+     ]
+    }
+   ],
+   "source": [
+    "# A python code to find the factorial of a number\n",
+    "num = int(input(\"Number:\"))\n",
+    "factorial = 1\n",
+    "if num < 0:\n",
+    "    print(\"Must be positive\")\n",
+    "elif num == 0:\n",
+    "    print(\"factorial = 1\")\n",
+    "else:\n",
+    "    for i in range(1,num + 1):\n",
+    "        factorial = factorial*i\n",
+    "        print(factorial)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Nested loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-20-dd32d5aa4654>, line 25)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-20-dd32d5aa4654>\"\u001b[0;36m, line \u001b[0;32m25\u001b[0m\n\u001b[0;31m    withdrawal = float(input('How much would you like to withdraw?'/nA$10/A$20/A$30/A$40/A$50)) # I will revixit this line\u001b[0m\n\u001b[0m                                                                      ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Using a loop inside a loop in called nested loop\n",
+    "# Nested for loop\n",
+    "print('Welcome to Solomon Bank of Africa ATM')\n",
+    "restart=('y')\n",
+    "chances = 3\n",
+    "balance = 67.14\n",
+    "while chances >= 0:\n",
+    "    pin = int(input('Please enter your four digit pin'))\n",
+    "    if pin == (1234):\n",
+    "        print('You entered your pin correctly\\n')\n",
+    "        while restart not in ('n','NO','no','N'):\n",
+    "            print('Please press 1 for you balance\\n')\n",
+    "            print('Please press 2 to make a withdrawal\\n')\n",
+    "            print('Please press 3 to pay in\\n')\n",
+    "            print('Please press 4 to return card\\n')\n",
+    "            option = int(input('What would you like to choose?'))\n",
+    "            if option == 1:\n",
+    "                print('Your balance is A$',balance, '\\n')\n",
+    "                restart = input('Would you like to go back?')\n",
+    "                if restart in {'n','NO','no','N'}:\n",
+    "                    print('Thank you')\n",
+    "                    break\n",
+    "            elif option == 2:\n",
+    "                option2 = ('y')\n",
+    "                withdrawal = float(input('How much would you like to withdraw?'/nA$10/A$20/A$30/A$40/A$50)) # I will revixit this line\n",
+    "                if withdrawal in [10, 20, 30, 40, 50]:\n",
+    "                    balance = balance - withdrawal\n",
+    "                    print('\\nYour balance is now A$',balance)\n",
+    "                    restart = input('Would you like to go back?')\n",
+    "                    if restart in ('n', 'No','no','N'):\n",
+    "                        print('Thank you')\n",
+    "                        break\n",
+    "            elif withdrawal != [10,20,30,40,50]:\n",
+    "                print('Invalid amount, Please retry\\n')\n",
+    "                restart = ('y')\n",
+    "                elif withdrawal == 1:\n",
+    "                    withdrawal = float(input('Please enter desired amount:'))\n",
+    "                \n",
+    "            elif option == 3:\n",
+    "                pay_in = float(input('How much would you like to pay in?'))\n",
+    "                balance = balance + pay_in\n",
+    "                print ('\\nYour balance is now A$',balance)\n",
+    "                restart = input('Would you like to go back?')\n",
+    "                if restart in ('n','NO','no','N'):\n",
+    "                    print('Thank you')\n",
+    "                    break\n",
+    "            elif option == 4:\n",
+    "                print('Please wait whilst your card is returned...\\n')\n",
+    "                print('Thank you for your service')\n",
+    "                break\n",
+    "            else:\n",
+    "                print('Please Enter a correct number. \\n')\n",
+    "                restart = ('y')\n",
+    "    elif pin != ('1234'):\n",
+    "        print('Incorrect password')\n",
+    "        chances = chances - 1\n",
+    "        if chances == 0:\n",
+    "            print('\\nNo more tries')\n",
+    "            break\n",
+    "        \n",
+    "                \n",
+    "                \n",
+    "              \n",
+    "    \n",
+    "              \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Maximal Number?5\n"
+     ]
+    },
+    {
+     "ename": "NameError",
+     "evalue": "name 'a' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-21-4cbc30d970d3>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0mn\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Maximal Number?\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;32mfor\u001b[0m \u001b[0mb\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mn\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m     \u001b[0mc_square\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0ma\u001b[0m\u001b[0;34m**\u001b[0m\u001b[0;36m2\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0mb\u001b[0m\u001b[0;34m**\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      7\u001b[0m     \u001b[0mc\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msqrt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mc_square\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      8\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mc_square\u001b[0m \u001b[0;34m-\u001b[0m \u001b[0mc\u001b[0m\u001b[0;34m**\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;36m0\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mNameError\u001b[0m: name 'a' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "# Nested for loop\n",
+    "# A code to print pythagorean numbers ie a^2 + b^2 = c^2\n",
+    "from math import sqrt\n",
+    "n = int(input(\"Maximal Number?\"))\n",
+    "for b in range(1, n+1):\n",
+    "    c_square = a**2 *b**2\n",
+    "    c = int(sqrt(c_square))\n",
+    "    if ((c_square - c**2) == 0):\n",
+    "        print(a,b,c)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# A for loop inside a while loop\n",
+    "travelling = input(\"Yes or no:\")\n",
+    "while travelling == 'yes':\n",
+    "    num = int(input(\"numberof people travelling\"))\n",
+    "    for num in range(1, num + 1):\n",
+    "        name = input(\"Name:\")\n",
+    "        age = input(\"Age:\")\n",
+    "        sex = input(\"Male or female:\")\n",
+    "        print(name)\n",
+    "        print(age)\n",
+    "        print(sex)\n",
+    "    travelling = input(\"Oops: forgot someone?\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# python patterns"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "                  * * * * * * * * * * * * * * * * * * \n",
+      "\n",
+      "                 * * * * * * * * * * * * * * * * * \n",
+      "\n",
+      "                * * * * * * * * * * * * * * * * \n",
+      "\n",
+      "               * * * * * * * * * * * * * * * \n",
+      "\n",
+      "              * * * * * * * * * * * * * * \n",
+      "\n",
+      "             * * * * * * * * * * * * * \n",
+      "\n",
+      "            * * * * * * * * * * * * \n",
+      "\n",
+      "           * * * * * * * * * * * \n",
+      "\n",
+      "          * * * * * * * * * * \n",
+      "\n",
+      "         * * * * * * * * * \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Pyramids\n",
+    "def pattern(n):\n",
+    "    k = 2 * n - 2\n",
+    "    for i in range(0,n):\n",
+    "        for i in range(0,k):\n",
+    "            print(end=\" \")\n",
+    "        k = k - 1\n",
+    "        for j in range(0, i + 1):\n",
+    "            print(\"* \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "                  * * * * * * * * * * * * * * * * * * \n",
+      "                 * * * * * * * * * * * * * * * * * \n",
+      "                * * * * * * * * * * * * * * * * \n",
+      "               * * * * * * * * * * * * * * * \n",
+      "              * * * * * * * * * * * * * * \n",
+      "             * * * * * * * * * * * * * \n",
+      "            * * * * * * * * * * * * \n",
+      "           * * * * * * * * * * * \n",
+      "          * * * * * * * * * * \n",
+      "         * * * * * * * * * \n"
+     ]
+    }
+   ],
+   "source": [
+    "# Pyramids\n",
+    "def pattern(n):\n",
+    "    k = 2 * n - 2\n",
+    "    for i in range(0,n):\n",
+    "        for i in range(0,k):\n",
+    "            print(end=\" \")\n",
+    "        k = k - 1\n",
+    "        for j in range(0, i + 1):\n",
+    "            print(\"* \", end=\"\")\n",
+    "        print(\"\\r\")\n",
+    "pattern(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "                  solo \n",
+      "\n",
+      "                 solo solo \n",
+      "\n",
+      "                solo solo solo \n",
+      "\n",
+      "               solo solo solo solo \n",
+      "\n",
+      "              solo solo solo solo solo \n",
+      "\n",
+      "             solo solo solo solo solo solo \n",
+      "\n",
+      "            solo solo solo solo solo solo solo \n",
+      "\n",
+      "           solo solo solo solo solo solo solo solo \n",
+      "\n",
+      "          solo solo solo solo solo solo solo solo solo \n",
+      "\n",
+      "         solo solo solo solo solo solo solo solo solo solo \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Pyramids\n",
+    "def pattern(n):\n",
+    "    k = 2 * n - 2\n",
+    "    for i in range(0,n):\n",
+    "        for j in range(0,k):\n",
+    "            print(end=\" \")\n",
+    "        k = k - 1\n",
+    "        for j in range(0, i + 1):\n",
+    "            print(\"solo \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "                    kimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkim\n",
+      "\n",
+      "                   kimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkim\n",
+      "\n",
+      "                  kimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkim\n",
+      "\n",
+      "                 kimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkim\n",
+      "\n",
+      "                kimkimkimkimkimkimkimkimkimkimkimkimkimkimkimkim\n",
+      "\n",
+      "               kimkimkimkimkimkimkimkimkimkimkimkimkimkimkim\n",
+      "\n",
+      "              kimkimkimkimkimkimkimkimkimkimkimkimkimkim\n",
+      "\n",
+      "             kimkimkimkimkimkimkimkimkimkimkimkimkim\n",
+      "\n",
+      "            kimkimkimkimkimkimkimkimkimkimkimkim\n",
+      "\n",
+      "           kimkimkimkimkimkimkimkimkimkimkim\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Pyramids\n",
+    "def pattern(n):\n",
+    "    k = 2 * n\n",
+    "    for i in range(0,n):\n",
+    "        for i in range(0,k):\n",
+    "            print(end=\" \")\n",
+    "        k = k - 1\n",
+    "        for j in range(0, i + 1):\n",
+    "            print(\"kim\", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "      Baptism \n",
+      "\n",
+      "     Baptism Baptism \n",
+      "\n",
+      "    Baptism Baptism Baptism \n",
+      "\n",
+      "   Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "  Baptism Baptism Baptism Baptism Baptism \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Pyramids\n",
+    "def pattern(n):\n",
+    "    k = 2 * n - 4\n",
+    "    for i in range(0,n):\n",
+    "        for j in range(0,k):\n",
+    "            print(end=\" \")\n",
+    "        k = k - 1\n",
+    "        for j in range(0, i + 1):\n",
+    "            print(\"Baptism \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "BaptismBaptismBaptismBaptismBaptismBaptismBaptismBaptismBaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptismBaptismBaptismBaptismBaptismBaptismBaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptismBaptismBaptismBaptismBaptismBaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptismBaptismBaptismBaptismBaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptismBaptismBaptismBaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptismBaptismBaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptismBaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptism\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Inverse pyramid\n",
+    "def pattern(n):\n",
+    "    k = 2 * n - 4\n",
+    "    for i in range(k,0,-1):\n",
+    "        for j in range(k,0,-1):\n",
+    "            print(end=\"\")\n",
+    "        k = k + 1\n",
+    "        for j in range(0,i + 1):\n",
+    "            print(\"Baptism\", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(7)\n",
+    "            "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "BaptismBaptismBaptismBaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptismBaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptismBaptism\n",
+      "\n",
+      "BaptismBaptism\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Inverse pyramid\n",
+    "def pattern(n):\n",
+    "    k = n - 2\n",
+    "    for i in range(k,0,-1):\n",
+    "        for j in range(k,0,-1):\n",
+    "            print(end=\"\")\n",
+    "        k = k + 1\n",
+    "        for j in range(0,i + 1):\n",
+    "            print(\"Baptism\", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(7)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Baptism Baptism Baptism Baptism Baptism Baptism Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "Baptism Baptism Baptism Baptism Baptism Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "Baptism Baptism Baptism Baptism Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "Baptism Baptism Baptism Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "Baptism Baptism Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "Baptism Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "Baptism Baptism Baptism \n",
+      "\n",
+      "Baptism Baptism \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Inverse pyramid\n",
+    "def pattern(n):\n",
+    "    k = n + 2\n",
+    "    for i in range(k,0,-1):\n",
+    "        for j in range(k,0,-1):\n",
+    "            print(end=\"\")\n",
+    "        k = k + 1\n",
+    "        for j in range(0,i + 1):\n",
+    "            print(\"Baptism \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(7)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "* * * * * * \n",
+      "\n",
+      "* * * * * \n",
+      "\n",
+      "* * * * \n",
+      "\n",
+      "* * * \n",
+      "\n",
+      "* * \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Inverse pyramid\n",
+    "def pattern(n):\n",
+    "    k = n - 2\n",
+    "    for i in range(k,0,-1):\n",
+    "        for j in range(k,0,-1):\n",
+    "            print(end=\"\")\n",
+    "        k = k + 1\n",
+    "        for j in range(0,i + 1):\n",
+    "            print(\"* \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(7)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "* \n",
+      "\n",
+      "* * \n",
+      "\n",
+      "* * * \n",
+      "\n",
+      "* * * * \n",
+      "\n",
+      "* * * * * \n",
+      "\n",
+      "* * * * * * \n",
+      "\n",
+      "* * * * * * * \n",
+      "\n",
+      "* * * * * * * * \n",
+      "\n",
+      "* * * * * * * \n",
+      "\n",
+      "* * * * * * \n",
+      "\n",
+      "* * * * * \n",
+      "\n",
+      "* * * * \n",
+      "\n",
+      "* * * \n",
+      "\n",
+      "* * \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Right star pattern\n",
+    "def pattern(n):\n",
+    "    for i in range(0,n):\n",
+    "        for i in range(0,i + 1):\n",
+    "            print(\"* \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "    for i in range(n,0,-1):\n",
+    "        for j in range(0,i + 1):\n",
+    "            print(\"* \",end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(7)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "* \n",
+      "\n",
+      "* * \n",
+      "\n",
+      "* * * \n",
+      "\n",
+      "* * * * \n",
+      "\n",
+      "* * * * * \n",
+      "\n",
+      "* * * * * * \n",
+      "\n",
+      "* * * * * * * \n",
+      "\n",
+      "* * * * * * * * \n",
+      "\n",
+      "* * * * * * * \n",
+      "\n",
+      "* * * * * * \n",
+      "\n",
+      "* * * * * \n",
+      "\n",
+      "* * * * \n",
+      "\n",
+      "* * * \n",
+      "\n",
+      "* * \n",
+      "\n",
+      "* \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Right star pattern\n",
+    "def pattern(n):\n",
+    "    for i in range(0,n):\n",
+    "        for i in range(0,i + 1):\n",
+    "            print(\"* \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "    for i in range(n,-1,-1):\n",
+    "        for j in range(0,i + 1):\n",
+    "            print(\"* \",end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(7)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "            * \n",
+      "         * * \n",
+      "      * * * \n",
+      "   * * * * \n",
+      "* * * * * \n",
+      "* * * * * * \n",
+      "* * * * * * * \n",
+      "\n",
+      "* * * * * * \n",
+      "\n",
+      "* * * * * \n",
+      "\n",
+      " * * * * \n",
+      "\n",
+      "   * * * \n",
+      "\n",
+      "     * * \n",
+      "\n",
+      "       * \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Left star pattern\n",
+    "def pattern(n):\n",
+    "    k = 2 * n - 2\n",
+    "    for i in range(0, n-1):\n",
+    "        for j in range(0,k):\n",
+    "            print(end=\" \")\n",
+    "        k = k - 2\n",
+    "        for j in range(0, i + 1):\n",
+    "            print(\"* \", end=\"\")\n",
+    "        print(\"\\r\")\n",
+    "        k = k - 1\n",
+    "    for i in range(n-1,-1,-1):\n",
+    "        for j in range(k, -1, -1):\n",
+    "            print(end=\" \")\n",
+    "        k = k + 2\n",
+    "        for j in range(0,i+1):\n",
+    "            print(\"* \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(7)\n",
+    "        \n",
+    "            \n",
+    "        \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "            * \n",
+      "          * * \n",
+      "        * * * \n",
+      "      * * * * \n",
+      "    * * * * * \n",
+      "  * * * * * * \n",
+      "  * * * * * * * \n",
+      "\n",
+      "    * * * * * * \n",
+      "\n",
+      "      * * * * * \n",
+      "\n",
+      "        * * * * \n",
+      "\n",
+      "          * * * \n",
+      "\n",
+      "            * * \n",
+      "\n",
+      "              * \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Left star pattern\n",
+    "def pattern(n):\n",
+    "    k = 2 * n - 2\n",
+    "    for i in range(0, n-1):\n",
+    "        for j in range(0,k):\n",
+    "            print(end=\" \")\n",
+    "        k = k - 2\n",
+    "        for j in range(0, i + 1):\n",
+    "            print(\"* \", end=\"\")\n",
+    "        print(\"\\r\")\n",
+    "    k =  1\n",
+    "    for i in range(n-1,-1,-1):\n",
+    "        for j in range(k, -1, -1):\n",
+    "            print(end=\" \")\n",
+    "        k = k + 2\n",
+    "        for j in range(0,i+1):\n",
+    "            print(\"* \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(7)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "                  * \n",
+      "                * * \n",
+      "              * * * \n",
+      "            * * * * \n",
+      "          * * * * * \n",
+      "        * * * * * * \n",
+      "      * * * * * * * \n",
+      "    * * * * * * * * \n",
+      "  * * * * * * * * * \n",
+      "* * * * * * * * * * \n",
+      "\n",
+      "  * * * * * * * * * \n",
+      "\n",
+      "    * * * * * * * * \n",
+      "\n",
+      "      * * * * * * * \n",
+      "\n",
+      "        * * * * * * \n",
+      "\n",
+      "          * * * * * \n",
+      "\n",
+      "            * * * * \n",
+      "\n",
+      "              * * * \n",
+      "\n",
+      "                * * \n",
+      "\n",
+      "                  * \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Left star pattern\n",
+    "def pattern(n):\n",
+    "    k = 2 * n - 2\n",
+    "    for i in range(0, n-1):\n",
+    "        for j in range(0,k):\n",
+    "            print(end=\" \")\n",
+    "        k = k - 2\n",
+    "        for j in range(0, i + 1):\n",
+    "            print(\"* \", end=\"\")\n",
+    "        print(\"\\r\")\n",
+    "    k = - 1\n",
+    "    for i in range(n-1,-1,-1):\n",
+    "        for j in range(k, -1, -1):\n",
+    "            print(end=\" \")\n",
+    "        k = k + 2\n",
+    "        for j in range(0,i+1):\n",
+    "            print(\"* \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "         Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "          Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "           Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "            Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "             Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "              Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "               Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                 Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                  Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism  \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Hourglass\n",
+    "def pattern(n):\n",
+    "    k = n - 2\n",
+    "    for i in range(n,-1, -1):\n",
+    "        for j in range(k,0,-1):\n",
+    "            print(end=\" \")\n",
+    "        k = k + 1\n",
+    "        for j in range(0, i+ 1):\n",
+    "            print(\" Baptism  \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "solo solo solo solo solo solo \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "def pattern(n):\n",
+    "    k = n - 2\n",
+    "    for i in range(n,-1,-1):\n",
+    "        for j in range(k,0,1):\n",
+    "            print(\"end\")\n",
+    "        print(\"solo \", end=\"\")\n",
+    "    print(\"\\n\")\n",
+    "pattern(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "         Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "          Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "           Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "            Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "             Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "              Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "               Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                 Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                  Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism  \n",
+      "\n",
+      "                   Baptism \n",
+      "\n",
+      "                  Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      "                 Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      "                Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      "               Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      "              Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      "             Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      "            Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      "           Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      "          Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      "         Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n",
+      " Baptism \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Hourglass\n",
+    "def pattern(n):\n",
+    "    k = n - 2\n",
+    "    for i in range(n,-1, -1):\n",
+    "        for j in range(k,0,-1):\n",
+    "            print(end=\" \")\n",
+    "        k = k + 1\n",
+    "        for j in range(0, i+ 1):\n",
+    "            print(\" Baptism  \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "    k = 2 * n - 2\n",
+    "    for i in range(0,n+1):\n",
+    "        for j in range(0,k):\n",
+    "            print(end=\" \")\n",
+    "        k = k - 1\n",
+    "        for j in range(0, i + 1 ):\n",
+    "            print(\" Baptism \",end=\"\")\n",
+    "            print(\"\\n\")\n",
+    "    \n",
+    "pattern(10) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "         Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism  \n",
+      "\n",
+      "                  solo \n",
+      "\n",
+      "                 solo solo \n",
+      "\n",
+      "                solo solo solo \n",
+      "\n",
+      "               solo solo solo solo \n",
+      "\n",
+      "              solo solo solo solo solo \n",
+      "\n",
+      "             solo solo solo solo solo solo \n",
+      "\n",
+      "            solo solo solo solo solo solo solo \n",
+      "\n",
+      "           solo solo solo solo solo solo solo solo \n",
+      "\n",
+      "          solo solo solo solo solo solo solo solo solo \n",
+      "\n",
+      "         solo solo solo solo solo solo solo solo solo solo \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Hourglass\n",
+    "def pattern(n):\n",
+    "    k = n - 2\n",
+    "    for i in range(n,-1, -1):\n",
+    "        for j in range(k,0,-1):\n",
+    "            print(end=\" \")\n",
+    "        k = k + 1\n",
+    "        for j in range(0, i+ 1):\n",
+    "            print(\" Baptism  \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "        k = 2 * n - 2\n",
+    "    for i in range(0,n):\n",
+    "        for j in range(0,k):\n",
+    "            print(end=\" \")\n",
+    "        k = k - 1\n",
+    "        for j in range(0, i + 1):\n",
+    "            print(\"solo \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "    \n",
+    "pattern(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "         Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "          Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "           Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "            Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "             Baptism   Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "              Baptism   Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "               Baptism   Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                Baptism   Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                 Baptism   Baptism   Baptism  \n",
+      "\n",
+      "                  Baptism   Baptism  \n",
+      "\n",
+      "                   Baptism  \n",
+      "\n",
+      "                Baptism \n",
+      "\n",
+      "               Baptism Baptism \n",
+      "\n",
+      "              Baptism Baptism Baptism \n",
+      "\n",
+      "             Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "            Baptism Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "           Baptism Baptism Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "          Baptism Baptism Baptism Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "         Baptism Baptism Baptism Baptism Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "        Baptism Baptism Baptism Baptism Baptism Baptism Baptism Baptism Baptism \n",
+      "\n",
+      "       Baptism Baptism Baptism Baptism Baptism Baptism Baptism Baptism Baptism Baptism \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Hourglass\n",
+    "def pattern(n):\n",
+    "    k = n - 2\n",
+    "    for i in range(n,-1, -1):\n",
+    "        for j in range(k,0,-1):\n",
+    "            print(end=\" \")\n",
+    "        k = k + 1\n",
+    "        for j in range(0, i+ 1):\n",
+    "            print(\" Baptism  \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "    k = 2 * n - 4\n",
+    "    for i in range(0,n):\n",
+    "        for j in range(0,k):\n",
+    "            print(end=\" \")\n",
+    "        k = k - 1\n",
+    "        for j in range(0, i + 1):\n",
+    "            print(\"Baptism \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " Baptism \n",
+      "\n",
+      " Baptism  Baptism \n",
+      "\n",
+      " Baptism  Baptism  Baptism \n",
+      "\n",
+      " Baptism  Baptism  Baptism  Baptism \n",
+      "\n",
+      " Baptism  Baptism  Baptism  Baptism  Baptism \n",
+      "\n",
+      " Baptism  Baptism  Baptism  Baptism  Baptism  Baptism \n",
+      "\n",
+      " Baptism  Baptism  Baptism  Baptism  Baptism  Baptism  Baptism \n",
+      "\n",
+      " Baptism  Baptism  Baptism  Baptism  Baptism  Baptism  Baptism  Baptism \n",
+      "\n",
+      " Baptism  Baptism  Baptism  Baptism  Baptism  Baptism  Baptism  Baptism  Baptism \n",
+      "\n",
+      " Baptism  Baptism  Baptism  Baptism  Baptism  Baptism  Baptism  Baptism  Baptism  Baptism \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "def pattern(n):\n",
+    "    for i in range(0,n):\n",
+    "        for j in range(0, i + 1):\n",
+    "            print(\" Baptism \", end=\"\")\n",
+    "        print(\"\\n\")\n",
+    "pattern(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Using a loop inside a loop in called nested loop\n",
+    "# Nested for loop\n",
+    "print('Welcome to Solomon Bank of Africa ATM')\n",
+    "restart=('y')\n",
+    "chances = 3\n",
+    "balance = 67.14\n",
+    "while chances >= 0:\n",
+    "    pin = int(input('Please enter your four digit pin'))\n",
+    "    if pin == (1234):\n",
+    "        print('You entered your pin correctly\\n')\n",
+    "        while restart not in ('n','NO','no','N'):\n",
+    "            print('Please press 1 for you balance\\n')\n",
+    "            print('Please press 2 to make a withdrawal\\n')\n",
+    "            print('Please press 3 to pay in\\n')\n",
+    "            print('Please press 4 to return card\\n')\n",
+    "            option = int(input('What would you like to choose?'))\n",
+    "            if option == 1:\n",
+    "                print('Your balance is A$',balance, '\\n')\n",
+    "                restart = input('Would you like to go back?')\n",
+    "                if restart in {'n','NO','no','N'}:\n",
+    "                    print('Thank you')\n",
+    "                    break\n",
+    "           \n",
+    "                \n",
+    "            elif option == 3:\n",
+    "                pay_in = float(input('How much would you like to pay in?'))\n",
+    "                balance = balance + pay_in\n",
+    "                print ('\\nYour balance is now A$',balance)\n",
+    "                restart = input('Would you like to go back?')\n",
+    "                if restart in ('n','NO','no','N'):\n",
+    "                    print('Thank you')\n",
+    "                    break\n",
+    "            elif option == 4:\n",
+    "                print('Please wait whilst your card is returned...\\n')\n",
+    "                print('Thank you for your service')\n",
+    "                break\n",
+    "            else:\n",
+    "                print('Please Enter a correct number. \\n')\n",
+    "                restart = ('y')\n",
+    "    elif pin != ('1234'):\n",
+    "        print('Incorrect password')\n",
+    "        chances = chances - 1\n",
+    "        if chances == 0:\n",
+    "            print('\\nNo more tries')\n",
+    "            break"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
